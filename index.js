@@ -12,11 +12,12 @@ window.addEventListener('DOMContentLoaded', () => {
   formsPage.classList.add('hide');
   contactsPage.classList.add('hide');
 
-  booksLink.addEventListener('click', () =>
-  {formsPage.classList.add('hide')
-  contactsPage.classList.add('hide');
-  booksPage.classList.remove('hide');
-  booksTitle.classList.remove('hide');});
+  booksLink.addEventListener('click', () => {
+    formsPage.classList.add('hide');
+    contactsPage.classList.add('hide');
+    booksPage.classList.remove('hide');
+    booksTitle.classList.remove('hide');
+  });
 
   contactsLink.addEventListener('click', () => {
     booksPage.classList.add('hide');
@@ -24,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     booksTitle.classList.add('hide');
     contactsPage.classList.remove('hide');
   });
-  formsLink.addEventListener('click', () =>{
+  formsLink.addEventListener('click', () => {
     booksPage.classList.add('hide');
     contactsPage.classList.add('hide');
     booksTitle.classList.add('hide');
