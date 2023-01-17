@@ -11,27 +11,25 @@ window.addEventListener('DOMContentLoaded', () => {
   const booksTitle = document.querySelector('.books-head');
   formsPage.classList.add('hide');
   contactsPage.classList.add('hide');
-  function showListOnly() {
-    formsPage.classList.add('hide');
-    contactsPage.classList.add('hide');
-    booksPage.classList.remove('hide');
-    booksTitle.classList.remove('hide');
-  }
-  booksLink.addEventListener('click', showListOnly);
-  function showContactOnly() {
+
+  booksLink.addEventListener('click', () =>
+  {formsPage.classList.add('hide')
+  contactsPage.classList.add('hide');
+  booksPage.classList.remove('hide');
+  booksTitle.classList.remove('hide');});
+
+  contactsLink.addEventListener('click', () => {
     booksPage.classList.add('hide');
     formsPage.classList.add('hide');
     booksTitle.classList.add('hide');
     contactsPage.classList.remove('hide');
-  }
-  contactsLink.addEventListener('click', showContactOnly);
-  function showFormOnly() {
+  });
+  formsLink.addEventListener('click', () =>{
     booksPage.classList.add('hide');
     contactsPage.classList.add('hide');
     booksTitle.classList.add('hide');
     formsPage.classList.remove('hide');
-  }
-  formsLink.addEventListener('click', showFormOnly);
+  });
 });
 
 const dt = DateTime.now();
